@@ -1,7 +1,7 @@
 
 # BERT
 
-## Introduction:
+### *Introduction:*
 
 * It is specifically designed for pre-training deep bidirectional representations from unlabeled text. The main approach that they follow is to jointly condition on both left and right context in all layers. In that case, BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for various tasks
 
@@ -9,7 +9,7 @@
 
 * The main limitation is the fact that language models are uni-directional. Their potential is quite limited, and also restricts what kind of architectures we can use for pre-training stage. For example,  GPT is left-to-right architecture, where every token can only attend to previous tokens in self-attention layers. This is actually sub-optimal solution for sentence-level tasks, and it can be also harmful when applying fine-tuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions. BERT proposed a way to learn bi-directional encoder representations, which helps to alleviate this uni-directionality problem. In this methodology, masked language modeling (MLM) is incorporated. 
 
-## Approach:
+### *Approach:*
 
 Multi-layer bidirectional transformer encoder is used for model architecture, and the original implementation in “Attention is all you need” is followed. Bert is implemented in two different sizes: Bert-Base and Bert-Large
 
