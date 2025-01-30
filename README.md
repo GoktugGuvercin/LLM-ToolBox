@@ -48,3 +48,11 @@ In fine-tuning stage, pre-trained weights are loaded into the model, and then al
     * Question Answering
     * Semantic Similarity
     * Text Classification
+
+
+# My Models:
+
+| Model |Model Size| Dataset | HuggingFace
+|:-----:|:--------:|:--------:|
+| BERT-Base | 110M | Imdb | [Link](https://huggingface.co/goktug14/bert_imdb)
+| GPT-1 | 117M | sst2 | [Link](https://huggingface.co/goktug14/gpt1_sst2_right)
