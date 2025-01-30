@@ -33,7 +33,7 @@ In pre-training stage, an unlabeled data is used, and the network receives two d
 In fine-tuning stage, pre-trained weights are loaded into the model, and then all these weights are fine-tuned using labeled data for downstream tasks. At this point, each downstream task necessitates a separate fine-tuned model. 
 
 
-# GPT
+# GPT-1
 
 ### *Introduction:*
 
