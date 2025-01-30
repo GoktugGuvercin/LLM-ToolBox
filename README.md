@@ -31,3 +31,20 @@ To make a comparison between BERT and GPT, we can use the following ontology:
 In pre-training stage, an unlabeled data is used, and the network receives two different training signals at the same time. The first one is masked language modeling, while the second is next sentence prediction. In that way, two unsupervised tasks are charged for BERT pre-training stage. 
 
 In fine-tuning stage, pre-trained weights are loaded into the model, and then all these weights are fine-tuned using labeled data for downstream tasks. At this point, each downstream task necessitates a separate fine-tuned model. 
+
+
+# GPT
+
+### *Introduction:*
+
+* Supervised learning depends extensively on annotated datasets to yield instructive signals for training deep neural networks. Nevertheless, the reliance on manual labeling substantially constrains their applicability across diverse domains, since manual labeling requires substantial time and labor force, particularly when dealing with large-scale corpora. One promising strategy to mitigate this problem entails harnessing linguistic cues from unlabeled data in conjunction with considerable fine-tuning the model, which provides task-agnostic features with little adaptation to downstream tasks. 
+
+* In this paper, this kind of semi-supervised approach is actually embraced by a two-stage training procedure. In the first stage, a language modeling objective is leveraged on unlabeled data to extract the initial features. Then, these features are refined through a supervised objective built at the top of annotated dataset tailored for downstream tasks.
+
+* For the architectural design, GPT is empowered by the transformer. Compared to recurrent neural networks, transformers are more powerful to capture long-term dependencies within the text because they operate on more structured memory system and exert a typical information retrieval mechanism by key-query-value triplets. Consequently, this enables transformer models to have robust finetuning (information transfer) option for downstream tasks. 
+
+* GPT is evaluated on four types of language understanding tasks:
+    * Natural Language Inference
+    * Question Answering
+    * Semantic Similarity
+    * Text Classification
